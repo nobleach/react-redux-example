@@ -1,0 +1,30 @@
+.product-container {
+    img {
+        display: inline-block;
+        vertical-align: top;
+    }
+}
+.product-main-info {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+
+        .product-price-container {
+            color: #444;
+            font-size: 20px;
+            text-align: right;
+
+            .price-label {
+                margin-right: 5px;
+            }
+
+            .price-formatted {
+                font-weight: bold;
+            }
+        }
+}
+.product-name {
+    color: #444;
+    font-size: 18px;
+    vertical-align: top;
+}

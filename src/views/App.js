@@ -12,20 +12,11 @@ export default class App {
     return (
       <div className="container app">
         <div className="jumbotron">
-          <h1>React Redux Example</h1>
+          <h1>Overstock React Redux Example</h1>
 
           <p>
-            by <a href="https://twitter.com/erikras" target="_blank">@erikras</a>
-            <a className="github" href="https://github.com/erikras/react-redux-universal-hot-example" target="_blank">
-              <i className="fa fa-github"/> View on Github
-            </a>
+            by <a href="https://twitter.com/nobleach" target="_blank">@nobleach</a>
           </p>
-          <iframe
-            src="https://ghbtns.com/github-btn.html?user=erikras&repo=react-redux-universal-hot-example&type=star&count=true&size=large"
-            frameBorder="0" allowTransparency="true" scrolling="0" width="160px" height="30px"></iframe>
-          <iframe
-            src="https://ghbtns.com/github-btn.html?user=erikras&amp;repo=react-redux-universal-hot-example&amp;type=fork&amp;count=true&size=large"
-            allowTransparency="true" frameBorder="0" scrolling="0" width="160px" height="30px"></iframe>
         </div>
         <nav className="navbar navbar-default">
           <div className="container-fluid">
@@ -33,6 +24,8 @@ export default class App {
               <li><Link to="/">Home</Link></li>
               <li><Link to="/sign-up">Sign Up</Link></li>
               <li><Link to="/login">Login</Link></li>
+              <li><Link to="/search">Search</Link></li>
+              <li><Link to="/product">Product</Link></li>
             </ul>
           </div>
         </nav>
