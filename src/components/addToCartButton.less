@@ -1,0 +1,265 @@
+.border-box() {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* COLORS */
+@os-red: #C7202C;
+@black: #222222;
+
+// New style guide colors 2014.04.29
+@clean-blue-light: #ebf0f5;
+@clean-blue: #0272a2;
+@clean-red-light: #f1dedd;
+@clean-red: #c7202c;
+@clean-grey-light: #fafafa;
+@header-bg-grey: #f6f6f6;
+@clean-off-white: #fefefe;
+@clean-white: #ffffff;
+@clean-grey: #94979b;
+@clean-light-grey: #B1B1B1;
+@clean-mid-grey: #ccc;
+@clean-medium-light-gray: #7b7b7b;
+@clean-medium-gray: #666;
+@clean-yellow-light: #fbf7e3;
+@clean-yellow: #8a6d3b;
+@clean-black: #444;
+@clean-green: #27ae60;
+@border-clean-grey: #cfcfcf;
+
+/* New Club O 2015.06.18 */
+@clubo-color: #1f96ac;
+@clubo-logo-header-color: #6e6b6b;
+@clubo-thank-you-welcome-color: #817e7e;
+@clubo-thank-you-enjoy-color: #9b9a9b;
+
+@helvetica-neue-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+/* NEW BUTTONS (Mar 2014) */
+
+.new-button() {
+    -webkit-appearance: none;
+    -moz-border-radius: 1.5px;
+    -webkit-border-radius: 1.5px;
+    .border-box;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    color: #fff !important;
+    display: inline-block;
+    font-family: @helvetica-neue-font-family;
+    font-size: 12px !important;
+    font-weight: bold !important;
+    line-height: 36px;
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
+    position: relative;
+    text-align: center;
+    text-decoration: none !important;
+    text-transform: uppercase;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.button-green() {
+    background-color: @clean-green;
+    border-color: #1d8248;
+}
+
+.button-blue() {
+    background-color: @clean-blue;
+    border-color: #015274;
+}
+
+.button-grey() {
+    background-color: #f8f8f8;
+    border-color: #CFCFCF;
+    color: #444444 !important;
+
+    &.button-disabled {
+        background-color: @clean-grey;
+        border-color: #4e5256;
+        color: #fff !important;
+    }
+}
+
+.button-red() {
+    background-color: @clean-red;
+    border-color: #9b1821;
+}
+
+.button-teal() {
+    background-color: @clubo-color;
+    border-color: #1F7B91;
+    color: #fff !important;
+}
+
+.button-white() {
+    background-color: transparent;
+    border-color: #c5c4c1;
+    color: @clean-blue !important;
+    font-size: 14px !important;
+    text-transform: none !important;
+}
+
+.button-default() {
+    background: @clean-grey-light !important;
+    border-color: @border-clean-grey !important;
+    color: #444 !important;
+}
+
+.button-variable() {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: auto;
+}
+
+.button-small {
+    line-height: 26px !important;
+}
+
+.button-disabled {
+    opacity: 0.5;
+}
+
+.button-icon() {
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.icon-left-arrow() {
+    &:before {
+        .button-icon;
+        content: "\f001";
+        margin-left: -6px;
+    }
+}
+
+.icon-right-arrow() {
+    &:after {
+        .button-icon;
+        content: "\f002";
+        margin-right: -6px;
+    }
+}
+
+a.new-button, a.new-button:link, a.new-button:visited, button.new-button, input.new-button {
+    .new-button;
+
+    &.button-red {
+        .button-red;
+    }
+
+    &.button-green {
+        .button-green;
+    }
+
+    &.button-blue {
+        .button-blue;
+    }
+
+    &.button-grey {
+        .button-grey;
+    }
+
+    &.button-teal {
+        .button-teal;
+    }
+
+    &.button-white {
+        .button-white;
+    }
+
+    &.button-variable {
+        .button-variable;
+    }
+
+    &.button-spinner {
+        font-size: 0 !important;
+        opacity: 0.5;
+        -webkit-transition: opacity 0.5s;
+        transition: opacity 0.5s;
+    }
+}
+
+.icon-button-left(@glyph, @glyph-font-size) {
+    &::before {
+        content: @glyph;
+        display: inline-block;
+        font-size: @glyph-font-size;
+        line-height: 31px;
+        margin-right: 7px;
+        padding-bottom: 3px;
+        vertical-align: middle;
+    }
+}
+
+.button-link() {
+    -webkit-touch-callout: none;
+}
+
+.button-link {
+    color: #444444;
+    display: inline-block;
+    font-weight: 300;
+    height: 31px;
+    padding-bottom: 13px;
+    padding-top: 13px;
+    overflow: hidden;
+    vertical-align: middle;
+
+
+    &.create-button-link {
+        .icon-button-left("\e608", 21px);
+    }
+
+    &.back-button-link {
+        .icon-button-left("\e60a", 21px);
+    }
+
+    &.settings-button-link {
+        .icon-button-left("\e60b", 21px);
+    }
+
+    &.share-button-link {
+        .icon-button-left("\e607", 15px);
+    }
+}
+
+/* END NEW BUTTONS */
+
+/* BUTTON ELEMENTS */
+
+.button-list {
+    text-align: center;
+
+    button, input, a {
+        margin-right: 10px !important;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &.fill-width {
+        border-spacing: 10px 0;
+        display: table;
+        table-layout: fixed;
+        width: 100%;
+
+        .new-button {
+            display: table-cell;
+            width: 100%;
+        }
+    }
+}
+
+/* END BUTTON ELEMENTS */
+
+select {
+    border: 1px solid #999;
+    height: 40px;
+    margin-bottom: 10px;
+    width: 100%;
+}
